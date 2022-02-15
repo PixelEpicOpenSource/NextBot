@@ -64,7 +64,7 @@ async def sudo(session: CommandSession):
     await session.send(cmdout)
 
 
-@on_command('music', aliases=('点歌', '我要听'))
+@on_command('music', aliases=('点歌', '我要听'), only_to_me=False)
 async def music(session: CommandSession):
     re = json.loads(requests.get(
         "http://localhost:3000/cloudsearch?limit=1&keywords="+session.current_arg_text.strip()).text)['result']['songs'][0]['id']
