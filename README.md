@@ -1,12 +1,15 @@
 # NextBot
 
-## How to start
+---
 
-1. generate project using `nb create` .
-2. create your plugin using `nb plugin create` .
-3. writing your plugins under `src/plugins` folder.
-4. run your bot using `nb run` .
+## 安装
 
-## Documentation
+参见 [NoneBot2 文档](https://v2.nonebot.dev/docs/start/installation) 安装 NoneBot2 和 go-cqhttp，并确保 go-cqhttp 可以成功登录你的账户
 
-See [Docs](https://v2.nonebot.dev/)
+## 使用
+
+```bash
+nb run
+```
+
+网易云点歌需要同时在本地运行[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
